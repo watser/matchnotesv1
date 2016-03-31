@@ -1,0 +1,119 @@
+extends layout
+
+block content
+  div(class='ink-grid main')
+    nav(class='ink-navigation')
+      ul(class='menu horizontal black top-menu')
+        li(class='heading active')
+          a CSGO Matchnotes
+        li
+          a LIVE 
+            span(class='ink-label yellow slab-300') 2
+    .column-group
+      .all-100(class="align-center", style='margin-top:5%;margin-bottom:5%;')
+        h1 PENTA vs. Ence        
+    div(class='column-group', style='border-bottom:5px solid black;')
+      .all-20  .
+      .all-60
+        .all-60
+          h2 ESL ESEA Pro League
+        .all-40
+          nav(class='ink-navigation push-right')
+            ul(class='pagination black')
+              li
+                a <
+              li(class='disabled')
+                a 12
+              li
+                a >
+              li
+                a Save
+        div(class='column-group horizontal-gutters')
+          .all-45
+            table(class='ink-table small bordered alternating')
+              thead
+                tr
+                  th(class='align-left') 1st half
+                  th(class='align-left') 2nd half
+              tbody
+                tr
+                  td(class='table_round')
+                    span(class="push-left") 1
+                    a(class='small') &nbsp; New note &nbsp;
+                  td(class='table_round')
+                    span(class="push-left") 1
+                    a(class='small') &nbsp; New note &nbsp;
+                tr
+                  td 2
+                  td 2
+                tr
+                  td(style='text-align:center;')
+                    span(class="push-left") 3
+                    a(class="align-center no-decoration table_note slab-700") &nbsp; 2 notes &nbsp;
+                  td 3
+                tr
+                  td 4
+                  td 4
+                tr
+                  td 5
+                  td 5
+                tr
+                  td 6
+                  td 6
+                tr
+                  td 7
+                  td 7
+                tr
+                  td 8
+                  td 8
+                tr
+                  td 9
+                  td 9
+                tr
+                  td 10
+                  td 10
+                tr
+                  td 11
+                  td 11
+                tr
+                  td 12
+                  td 12
+                tr
+                  td 13
+                  td 13
+                tr
+                  td 14
+                  td 14
+                tr
+                  td 15
+                  td 15
+          
+          .all-55 
+            .all-100
+              nav(class="ink-navigation")
+                ul(class="menu vertical black align-center create-note-button")
+                  li
+                    a New note
+                    ul(class="submenu")
+                      li
+                        .ink-form
+                          div(class="control-group", style='padding:0;margin:0;')
+                            .control
+                              input(type="text", placeholder="Press ENTER to save this note.")
+            .all-100
+              h4(class='align-center', style='margin-top:2%') Round highlights
+              blockquote(class="condensed")
+                p Late smokes on A.
+                cite 0:47
+              blockquote(class="condensed")
+                p They went through smoke with a couple of flashes!
+                cite 1:12              
+              blockquote(class="condensed")
+                p Late smokes on A.
+                cite 0:47
+              blockquote(class="condensed")
+                p They went through smoke with a couple of flashes!
+                cite 1:12              
+      .all-20  .
+    //- div(class='column-group footer')
+    //-   .all-100 teer

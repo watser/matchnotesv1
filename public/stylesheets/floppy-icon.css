@@ -1,0 +1,95 @@
+.icon {
+    width:1em;
+    height:1em;
+    box-shadow:0 1px 3px rgba(0,0,0,.2);
+    position:relative;
+    z-index:1;
+    transition:0.2s ease box-shadow;
+    margin:0 auto;
+}
+.icon:hover {
+    box-shadow:0 1px 3px rgba(0,0,0,.4);
+}
+.icon * {
+    box-sizing:border-box;
+}
+.icon-floppy {
+    background:#333;
+}
+/* floppy metal plate */
+.icon-floppy:after {
+    position:absolute;
+    bottom:0px;
+    background:#333;
+    height:.175em;
+    width:.125em;
+    right:.3em;
+    content:"";
+    transition:0.2s ease all;
+}
+.icon-floppy:before {
+    position:absolute;
+    bottom:0px;
+    background:#bbb;
+    height:.25em;
+    width:0.5em;
+    left:50%;
+    margin-left:-.25em;
+    content:"";
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    transition:0.2s ease all;
+}
+/* floppy label */
+.icon-floppy span {
+    position:absolute;
+    width:.8em;
+    top:0em;
+    height:.55em;
+    background:#fff;
+    display:block;
+    margin-left:-.4em;
+    left:50%;
+    border-top:.1em solid #00D900;
+    border-bottom:.05em solid #00D900;
+}
+.icon-floppy span:after {
+    position:relative;
+    background:rgba(0,0,0,.1);
+    height:1px;
+    display:block;
+    content:"";
+    width:100%;
+    margin-top:.125em;
+    clear:both;
+    overflow:hidden;
+    line-height:1px;
+    bottom:.5em;
+}
+.icon-floppy span:before {
+    position:relative;
+    background:rgba(0,0,0,.1);
+    height:1px;
+    display:block;
+    content:"";
+    width:100%;
+    margin-top:.125em;
+    clear:both;
+    overflow:hidden;
+    line-height:1px;
+}
+/* hover slide effect */
+.icon-floppy:hover:before {
+    left:50%;
+    margin-left:-.4em;
+}
+.icon-floppy:hover:after {
+    right:.475em;
+}
+
+/* icon wrapper for this presentation only */
+.icon-wrapper {
+  text-align:center;
+  padding:20% 0 20% 0;
+}
+/* to show the icon zoomed/enlarged */

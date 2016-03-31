@@ -1,0 +1,178 @@
+extends layout
+
+block content
+  .wrap
+    div(class='ink-grid main')
+      nav(class='ink-navigation')
+        ul(class='menu horizontal black top-menu')
+          li(class='heading active')
+            a(href='/') CSGO Matchnotes
+          li
+            a LIVE 
+              span(class='ink-label yellow slab-300') 2
+      .column-group
+        .all-100(class="align-center", style='margin-top:3em;margin-bottom:2em;')
+          h1
+            i.team_names PENTA vs. Ence
+      .column-group.push-center.main-container
+        .xlarge-70.large-70.medium-100.small-100.tiny-100
+          div(class="column-group", style='border-bottom:2px solid #DDD;margin-bottom:1%;')
+            .xlarge-50.large-50.medium-50.small-100.tiny-100.league-title
+              h2 ESL ESEA Pro League
+            .xlarge-50.large-50.medium-50.small-100.tiny-100.round-nav
+              nav.ink-navigation.push-right
+                ul.pagination.black.shake-little
+                  li
+                    a <
+                  li.disabled.current_round_container
+                    a#current_round.align-center 1
+                  li
+                    a >
+                  li
+                    a#refresh R
+          .column-group.horizontal-gutters
+            .xlarge-45.large-45.medium-100.small-100.tiny-100
+              table.ink-table.small.bordered.alternating
+                thead
+                  tr
+                    th(class='align-left all-50') 1st half
+                    th(class='align-left all-50') 2nd half
+                tbody
+                  tr
+                    td.align-center
+                      span.push-left 1
+                      a#1
+                    td.align-center
+                      span.push-left 16
+                      a#16
+                  tr
+                    td.align-center
+                      span.push-left 2
+                      a#2
+                    td.align-center
+                      span.push-left 17
+                      a#17
+                  tr
+                    td.align-center
+                      span.push-left 3
+                      a#3
+                    td.align-center
+                      span.push-left 18
+                      a#18
+                  tr
+                    td.align-center
+                      span.push-left 4
+                      a#4
+                    td.align-center
+                      span.push-left 19
+                      a#19
+                  tr
+                    td.align-center
+                      span.push-left 5
+                      a#5
+                    td.align-center
+                      span.push-left 20
+                      a#20
+                  tr
+                    td.align-center
+                      span.push-left 6
+                      a#6
+                    td.align-center
+                      span.push-left 21
+                      a#21
+                  tr
+                    td.align-center
+                      span.push-left 7
+                      a#7
+                    td.align-center
+                      span.push-left 22
+                      a#22
+                  tr
+                    td.align-center
+                      span.push-left 8
+                      a#8
+                    td.align-center
+                      span.push-left 23
+                      a#23
+                  tr
+                    td.align-center
+                      span.push-left 9
+                      a#9
+                    td.align-center
+                      span.push-left 24
+                      a#24
+                  tr
+                    td.align-center
+                      span.push-left 10
+                      a#10
+                    td.align-center
+                      span.push-left 25
+                      a#25
+                  tr
+                    td.align-center
+                      span.push-left 11
+                      a#11
+                    td.align-center
+                      span.push-left 26
+                      a#26
+                  tr
+                    td.align-center
+                      span.push-left 12
+                      a#12
+                    td.align-center
+                      span.push-left 27
+                      a#27
+                  tr
+                    td.align-center
+                      span.push-left 13
+                      a#13
+                    td.align-center
+                      span.push-left 28
+                      a#28
+                  tr
+                    td.align-center
+                      span.push-left 14
+                      a#14
+                    td.align-center
+                      span.push-left 29
+                      a#29
+                  tr
+                    td.align-center
+                      span.push-left 15
+                      a#15
+                    td.align-center
+                      span.push-left 30
+                      a#30
+            .xlarge-55.large-55.medium-100.small-100.tiny-100
+              .all-100
+                .ink-form.note_field
+                  div(class="control-group", style='padding:0;margin:0;')
+                    .control
+                      input(type="text", placeholder="Press ENTER to save this note." id="note_textfield")
+              .all-100
+                h4(class='align-center round_notes_name', style='margin-top:2%;margin-bottom:0.5em;') Round notes
+                #note_block_scroller
+                  .note_block#note_block
+                    p.condensed(style='color:#CCC;background-color:#EEE;padding:.5em;text-align:center;width:50%;') No notes found...
+                    //- blockquote.condensed.notebox_t.note_execute
+                    //-   p Late smokes on A.
+                    //-   cite 0:47
+                    //- blockquote.condensed.notebox_ct.note_wrong
+                    //-   p They went through smoke without even throwing a flash.. I can't believe they have done that! #{title}
+                    //-   cite 1:12
+                    //- blockquote.condensed.notebox_ct.note_gameplay
+                    //-   p Late smokes on A.
+                    //-   cite 0:47
+                    //- blockquote.condensed.notebox_t.note_highlight
+                    //-   p They went through smoke with a couple of flashes!
+                    //-   cite 1:12
+          .push(style='border-top:2px solid #DDD;') &nbsp;
+      footer.clearfix
+        .ink-grid
+          ul.unstyled.inline.half-vertical-space
+            li.active
+              a About
+            li
+              a Support
+            li.push-right
+              .note(style='color:#BBB') by /u/johnny_pone
